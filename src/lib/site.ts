@@ -1,6 +1,8 @@
-export const APP_STORE_URL = "https://www.apple.com/app-store/";
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://cyla.app";
-export const navigation = [{ label: "Features", href: "#features" }, { label: "Privacy", href: "#privacy" }, { label: "FAQ", href: "#faq" }];
+import { siteConfig } from "@/src/config/site";
+
+export const APP_STORE_URL = siteConfig.appStoreUrl;
+export const SITE_URL = siteConfig.websiteUrl;
+export const navigation = [{ label: "Features", href: "/#features" }, { label: "Privacy", href: "/#privacy" }, { label: "FAQ", href: "/#faq" }];
 export const faqs = [
   ["What is Cyla?", "Cyla is a simple iOS app for tracking your period, learning about your cycle, and planning with more context."],
   ["Is Cyla free?", "Cyla will be available to download from the App Store. Pricing details will be shared when it launches."],
