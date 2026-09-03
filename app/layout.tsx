@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { SITE_URL } from "@/src/lib/site";
+import { DataFastAnalytics } from "@/src/components/DataFastAnalytics";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL), title: "Cyla: Period & Cycle Tracker", description: "Track your period, understand your cycle, and know what’s coming with Cyla.", alternates: { canonical: "/" },
@@ -9,4 +10,4 @@ export const metadata: Metadata = {
   twitter: { card: "summary", title: "Cyla: Period & Cycle Tracker", description: "Track your period, understand your cycle, and know what’s coming with Cyla.", images: ["/cyla-logo.png"] },
 };
 export const viewport: Viewport = { themeColor: "#ffffff", colorScheme: "light" };
-export default function RootLayout({ children }: LayoutProps<"/">) { return <html lang="en"><body>{children}</body></html>; }
+export default function RootLayout({ children }: LayoutProps<"/">) { return <html lang="en"><body>{children}<DataFastAnalytics /></body></html>; }

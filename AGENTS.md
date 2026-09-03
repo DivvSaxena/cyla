@@ -11,3 +11,7 @@ This block is written and re-added by `next dev`. Verify at `node_modules/next/d
 ## Writing style
 
 Never use em dash punctuation in code comments, documentation, metadata, or user-facing copy. Rewrite the sentence with a period, comma, colon, or parentheses instead.
+
+## Support contact
+
+Use `support@cylaapp.com` as Cyla's support and privacy contact address. Reference the centralized `siteConfig.supportEmail` value in application code instead of hardcoding the address.
